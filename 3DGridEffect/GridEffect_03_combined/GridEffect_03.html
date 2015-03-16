@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<title>Perspective Page View Navigation</title>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+        
+       <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+        
+		<script src="js/modernizr.custom.25376.js"></script>
+       <!-- 3D Grid Effect -->
+       <link rel="stylesheet" type="text/css" href="css/component2.css" />
+		<script src="js/modernizr.custom.js"></script>
+        <!-- /3D Grid Effect -->
+	</head>
+	<body>
+		<div id="perspective" class="perspective effect-movedown">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					
+                  <!-- main lay out: tek -->
+                  <header>
+                  Header
+                  </header>
+                  
+                  <section class="grid3d vertical" id="grid3d">
+				<div class="grid-wrap">
+					<div class="grid">
+                    
+						<figure><img src="img/car01_small.jpg" width="170" height="170" alt="img01"/></figure>
+						<figure><img src="img/car02_small.jpg" width="170" height="170" alt="img02"/></figure>
+						<figure><img src="img/car03_small.jpg" width="170" height="170" alt="img03"/></figure>
+					</div>
+				</div><!-- /grid-wrap -->
+				<div class="content">
+					<div>
+						<div class="dummy-img"><img src="img/car01_big.jpg" width="700" height="506" alt=""/></div>
+						<p class="dummy-text">description of image 01</p>
+					</div>
+                  <div>
+						<div class="dummy-img"><img src="img/car02_big.jpg" width="700" height="506" alt=""/></div>
+						<p class="dummy-text">description of image 02</p>
+					</div>
+                  <div>
+						<div class="dummy-img"><img src="img/car03_big.jpg" width="700" height="506" alt=""/></div>
+						<p class="dummy-text">description of image 03</p>
+					</div>
+					
+					<span class="loading"></span>
+					<span class="icon close-content"><i class="fa fa-times-circle-o fa-3x"></i></span>
+				</div>
+			</section>
+                  
+                  <footer>
+                  Footer
+              		</footer>
+                    
+				</div><!-- wrapper -->
+                
+              <div id="showMenu" class="menu"><!-- show the menu: tek -->
+                  Menu
+              </div>
+                  
+			</div><!-- /container -->
+            
+			<nav class="outer-nav top horizontal">
+				<a href="#"><i class="fa fa-home"></i> Home</a>
+				<a href="#"><i class="fa fa-apple"></i> Apple</a>
+				<a href="#"><i class="fa fa-android"></i> Android</a>
+				<a href="#"><i class="fa fa-pinterest"></i> Pinterest</a>
+				<a href="#"><i class="fa fa-facebook-official"></i> Facebook</a>
+			</nav>
+            
+		</div><!-- /perspective -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+        
+        <!-- 3D Grid Effect -->
+       <script src="js/classie.js"></script>
+		<script src="js/helper.js"></script>
+		<script src="js/grid3d.js"></script>
+		<script>
+			new grid3D( document.getElementById( 'grid3d' ) );
+		</script> 
+        <!-- /3D Grid Effect -->
+	</body>
+</html>
